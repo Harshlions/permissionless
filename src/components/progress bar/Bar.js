@@ -9,14 +9,14 @@ import Cursor from './Cursor';
 const ContentComponent = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    // 👇️ replace set to true
+    
     navigate('/Loading', {replace: true});
   };
   return (
    
    <div className="bg">
     <View>
-    <Cursor />
+    
     <button className='usure'  onClick={handleClick}>Are you sure?</button>
     </View>
 

@@ -1,11 +1,11 @@
-.bg{
+* {
     background-image: url("Pd.png"); /* The image used */
     background-color: #000; /* Used if the image is unavailable */
     background-position: fill;
     background-repeat: no-repeat;
-    width: 1416.11px;
+    width: 100%;
     position: relative;
-    left: 42.57px;
+    left: 0;
 
 }
 
@@ -39,7 +39,7 @@
 .usure{
     background-color: aliceblue;
     color: #000;
-    left: 620px;
+    left: 655px;
     top: 390px;
     position: absolute;
     gap: 10px;

@@ -16,5 +16,6 @@
     border-radius: 50%;
     background: radial-gradient(50% 50% at 50% 50%, rgba(169, 255, 28, 0) 0%, #A9FF1C 100%);
     mix-blend-mode: difference;
+    z-index: 2;
   }
 

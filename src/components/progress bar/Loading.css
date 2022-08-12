@@ -1,8 +1,40 @@
-/* .newbg{
-    background-color: white;
-    background-size: cover;
-} */
-.logo{
+
+.container{
     position: relative;
-    top: 25rem;
+    height: 50rem;
+    width: 90rem;
+    background-color:  #000;
+
+}
+
+.barr {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color:  #A9FF1C;
+    animation-name: LeftToRight;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+.container svg {
+    top: 30rem;
+    position: relative;
+}
+
+.barr svg {
+    top: 30rem;
+    position: relative;
+}
+
+@keyframes LeftToRight {
+
+from{
+    width: 0%;
+}
+
+to{
+     width: 100%;
+}
+
 }
