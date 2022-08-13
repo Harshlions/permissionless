@@ -1,14 +1,18 @@
 * {
-    background-image: url("Pd.png"); /* The image used */
+   /* background-image: url("Pd.png");  The image used */
     background-color: #000; /* Used if the image is unavailable */
     background-position: fill;
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
     left: 0;
+    
+}
+.dclick svg {
+
+ left: 0;
 
 }
-
 .button {
     display: flex;
     flex-direction: row;
@@ -20,7 +24,7 @@
     position: absolute;
     width: 344px;
     height: 63px;
-    left: 584px;
+    left: 600px;
     top: 459.5px;
 
     /* Primary Green */
@@ -37,10 +41,10 @@
     flex-grow: 0;
   }
 .usure{
-    background-color: aliceblue;
+    background-color: #fff;
     color: #000;
-    left: 655px;
-    top: 390px;
+    left: 685px;
+    top: -33rem;
     position: absolute;
     gap: 10px;
     align-items: flex-start;

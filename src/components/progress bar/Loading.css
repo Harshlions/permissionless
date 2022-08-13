@@ -17,14 +17,33 @@
     animation-iteration-count: 1;
 }
 
-.container svg {
-    top: 30rem;
-    position: relative;
+.container h1 {
+    
+    width: 500px;
+    height: 19px;
+    left: 35rem;
+    top: 25rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 19px;
+    background-color: #A9FF1C;
+    color: #000;
+    z-index: 1;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
 }
 
-.barr svg {
-    top: 30rem;
-    position: relative;
+.container svg {
+    top: 23rem;
+    left: 11rem;
+    mix-blend-mode: difference;
+
 }
 
 @keyframes LeftToRight {
@@ -38,3 +57,45 @@ to{
 }
 
 }
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 100;
+    inherits: false;
+}
+  .counter {
+    animation: counter 10s alternate ease-in-out;
+    counter-reset: num var(--num);
+    position: absolute;
+    width: 146px;
+    height: 213px;
+    left: 1193px;
+    top: 580.26px;
+    background-color: transparent;
+
+    /* Head */
+
+    
+    
+    font-weight: 700;
+    font-size: 153px;
+    line-height: 213px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+  
+  .counter::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0 ;
+    }
+    to {
+      --num: 100 ;
+    }
+  }
