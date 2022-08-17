@@ -1,9 +1,11 @@
 
 .container{
     position: relative;
-    height: 50rem;
+    height: 55rem;
     width: 90rem;
     background-color:  #000;
+    top: -10rem;
+    overflow: hidden;
 
 }
 
@@ -21,16 +23,16 @@
     
     width: 500px;
     height: 19px;
-    left: 35rem;
-    top: 25rem;
+    left: 20rem;
+    top: 30rem;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 19px;
-    background-color: #A9FF1C;
-    color: #000;
+    background-color: transparent;
+    color: #fff;
     z-index: 1;
-
+    mix-blend-mode: exclusion;
     /* Inside auto layout */
 
     flex: none;
@@ -40,9 +42,11 @@
 }
 
 .container svg {
-    top: 23rem;
+    top: 27rem;
     left: 11rem;
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion ;
+    z-index: 3;
+    
 
 }
 
@@ -50,10 +54,12 @@
 
 from{
     width: 0%;
+    
+
 }
 
 to{
-     width: 100%;
+     width: 100%; 
 }
 
 }
@@ -72,6 +78,7 @@ to{
     left: 1193px;
     top: 580.26px;
     background-color: transparent;
+    mix-blend-mode: exclusion;
 
     /* Head */
 
@@ -98,4 +105,37 @@ to{
     to {
       --num: 100 ;
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .container {
+      height: 66rem;
+      width: 26rem;
+    }
+
+    .container h1 {
+      left: 1rem;
+      width: 25rem;
+      font-size: 1.6rem;
+    }
+
+    .container svg 
+    {
+      top: 35rem;
+      left: .1rem;
+      height: 6rem;
+    }
+
+    .barr {
+      animation-duration: 5s;
+    }
+
+    .counter {
+      left: 100rem;
+      width: 50px;
+      height: 100px;
+      
+    }
+
   }

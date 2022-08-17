@@ -6,6 +6,7 @@
     width: 100%;
     position: relative;
     left: 0;
+    top: 0%;
     
 }
 .dclick svg {
@@ -59,5 +60,16 @@
     line-height: 19.36px;
     }
 
+    @media only screen and (max-width: 600px) {
+
+      .usure {
+        left: 101px;
+      }
+      
+      .button {
+        left: 20px;
+      }
+
+    }
 
    
